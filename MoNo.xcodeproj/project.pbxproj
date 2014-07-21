@@ -7,9 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4900C456196864D900EBF2A1 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4900C454196864D900EBF2A1 /* MenuViewController.swift */; };
+		4900C457196864D900EBF2A1 /* MenuViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4900C455196864D900EBF2A1 /* MenuViewController.xib */; };
 		496E4E08196845CE0003739B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 496E4E07196845CE0003739B /* AppDelegate.swift */; };
 		496E4E0A196845CE0003739B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 496E4E09196845CE0003739B /* Images.xcassets */; };
 		496E4E16196845CE0003739B /* MoNoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 496E4E15196845CE0003739B /* MoNoTests.swift */; };
+		496E4E23196846220003739B /* Episode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 496E4E22196846220003739B /* Episode.swift */; };
+		496E4E25196846380003739B /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 496E4E24196846380003739B /* Movie.swift */; };
+		496E4E27196846460003739B /* Show.swift in Sources */ = {isa = PBXBuildFile; fileRef = 496E4E26196846460003739B /* Show.swift */; };
+		496E4E29196846590003739B /* TVShow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 496E4E28196846590003739B /* TVShow.swift */; };
+		496E4E2B196846770003739B /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 496E4E2A196846770003739B /* User.swift */; };
+		496E4E2D196846AB0003739B /* Actor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 496E4E2C196846AB0003739B /* Actor.swift */; };
+		498D58E8196880BA00BCA123 /* Cinema.swift in Sources */ = {isa = PBXBuildFile; fileRef = 498D58E7196880BA00BCA123 /* Cinema.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -23,6 +32,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4900C454196864D900EBF2A1 /* MenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
+		4900C455196864D900EBF2A1 /* MenuViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MenuViewController.xib; sourceTree = "<group>"; };
 		496E4E02196845CE0003739B /* MoNo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MoNo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		496E4E06196845CE0003739B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		496E4E07196845CE0003739B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -30,6 +41,13 @@
 		496E4E0F196845CE0003739B /* MoNoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MoNoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		496E4E14196845CE0003739B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		496E4E15196845CE0003739B /* MoNoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoNoTests.swift; sourceTree = "<group>"; };
+		496E4E22196846220003739B /* Episode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Episode.swift; sourceTree = "<group>"; };
+		496E4E24196846380003739B /* Movie.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
+		496E4E26196846460003739B /* Show.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Show.swift; sourceTree = "<group>"; };
+		496E4E28196846590003739B /* TVShow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TVShow.swift; sourceTree = "<group>"; };
+		496E4E2A196846770003739B /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		496E4E2C196846AB0003739B /* Actor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Actor.swift; sourceTree = "<group>"; };
+		498D58E7196880BA00BCA123 /* Cinema.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Cinema.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +90,9 @@
 			isa = PBXGroup;
 			children = (
 				496E4E07196845CE0003739B /* AppDelegate.swift */,
+				496E4E1F196845EE0003739B /* Model */,
+				496E4E20196845F40003739B /* View */,
+				496E4E21196846040003739B /* Controller */,
 				496E4E09196845CE0003739B /* Images.xcassets */,
 				496E4E05196845CE0003739B /* Supporting Files */,
 			);
@@ -101,6 +122,36 @@
 				496E4E14196845CE0003739B /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		496E4E1F196845EE0003739B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				496E4E22196846220003739B /* Episode.swift */,
+				496E4E24196846380003739B /* Movie.swift */,
+				496E4E28196846590003739B /* TVShow.swift */,
+				496E4E2A196846770003739B /* User.swift */,
+				496E4E2C196846AB0003739B /* Actor.swift */,
+				496E4E26196846460003739B /* Show.swift */,
+				498D58E7196880BA00BCA123 /* Cinema.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		496E4E20196845F40003739B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				4900C455196864D900EBF2A1 /* MenuViewController.xib */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		496E4E21196846040003739B /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				4900C454196864D900EBF2A1 /* MenuViewController.swift */,
+			);
+			name = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -183,6 +234,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				496E4E0A196845CE0003739B /* Images.xcassets in Resources */,
+				4900C457196864D900EBF2A1 /* MenuViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -201,6 +253,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				496E4E08196845CE0003739B /* AppDelegate.swift in Sources */,
+				496E4E23196846220003739B /* Episode.swift in Sources */,
+				496E4E2B196846770003739B /* User.swift in Sources */,
+				498D58E8196880BA00BCA123 /* Cinema.swift in Sources */,
+				496E4E2D196846AB0003739B /* Actor.swift in Sources */,
+				496E4E27196846460003739B /* Show.swift in Sources */,
+				496E4E29196846590003739B /* TVShow.swift in Sources */,
+				496E4E25196846380003739B /* Movie.swift in Sources */,
+				4900C456196864D900EBF2A1 /* MenuViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -379,6 +439,7 @@
 				496E4E1B196845CE0003739B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		496E4E1C196845CE0003739B /* Build configuration list for PBXNativeTarget "MoNoTests" */ = {
 			isa = XCConfigurationList;
@@ -387,6 +448,7 @@
 				496E4E1E196845CE0003739B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

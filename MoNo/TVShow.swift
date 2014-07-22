@@ -10,7 +10,7 @@ import Foundation
 
 class TVShow : Show
 {
-    var episodes: [Episode]?
+    var episodes: [Episode] = []
     
     init(name: String, description: String, releasedate: NSDate)
     {

@@ -36,19 +36,14 @@ class MenuViewController: UIViewController
     
     @IBAction func testButton(sender: AnyObject)
     {
-        hannibal.episodes = [hans1e1];
+        hannibal.episodes += [hans1e1];
         
         println(hannibal.showDescription())
-        println(hannibal.episodes?.count)
+        println(hannibal.episodes.count)
         
-        
-        if let episodes = hannibal.episodes
+        for episode in hannibal.episodes
         {
-            for episode in episodes
-            {
-                println(episode.showDescription())
-            }
+            println(episode.showDescription())
         }
-        
     }
 }
